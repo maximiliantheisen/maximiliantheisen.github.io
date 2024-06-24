@@ -13,18 +13,54 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .menu {
+            position: fixed;
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            height: 100%;
+            overflow: auto;
+        }
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu ul li {
+            margin: 10px 0;
+        }
+        .menu ul li ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .menu ul li a:hover {
+            color: #007BFF;
         }
         .content {
             text-align: left;
             width: 80%;
             max-width: 800px;
             padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content h1 {
+            margin-top: 20px;
+            color: #007BFF;
         }
         .content h2 {
-            margin-top: 20px;
+            margin-top: 30px;
+            color: #007BFF;
         }
         .content h3 {
-            margin-top: 10px;
+            margin-top: 20px;
+            color: #007BFF;
         }
         .content p {
             margin-bottom: 10px;
@@ -39,21 +75,27 @@
     </style>
 </head>
 <body>
-    <div class="content">
+    <!-- Include the menu using iframe -->
+    <iframe src="menu.html" title="Menu" width="20%" height="100%" style="position: fixed; border: none;"></iframe>
+
+    <div class="content" style="margin-left: 20%;">
         <h1>Research</h1>
+
         <h2>Publications</h2>
         <h3>Journal Articles</h3>
         <div>
-            <p><b>Theisen, M.</b> &amp; Germar, M. (2024). Uncertain facts or uncertain values? Testing the distinction between empirical and normative uncertainty in moral judgments. <i>Cognitive Science</i>. <a href="https://doi.org/10.1111/cogs.13422" rel="nofollow">https://doi.org/10.1111/cogs.13422</a> (Open Access)<br></p>
+            <p><b>Theisen, M.</b> &amp; Germar, M. (2024). Uncertain facts or uncertain values? Testing the distinction between empirical and normative uncertainty in moral judgments. <i>Cognitive Science</i>. <a href="https://doi.org/10.1111/cogs.13422" rel="nofollow">https://doi.org/10.1111/cogs.13422</a> (Open Access)</p>
             <p>Löloff, J.*, <b>Theisen, M.*</b>, Mertens, A., &amp; Funke, J. (2023). Human-machine symbiosis: Ambivalent intuitions regarding gain and loss of personal control explain acceptance of smart mobility aids. <i>Behaviour &amp; Information Technology</i>. <a href="https://doi.org/10.1080/0144929X.2023.2276812" rel="nofollow">https://doi.org/10.1080/0144929X.2023.2276812</a></p>
             <p>*Shared first authorship</p>
-            <p><b>Theisen, M.</b> (2023). Metaethical intuitions in lay concepts of normative uncertainty. <i>Philosophical Psychology</i>. Advance online publication. <a href="https://doi.org/10.1080/09515089.2023.2174422" rel="nofollow">https://doi.org/10.1080/09515089.2023.2174422</a></p>
+            <p>[PDF] <b>Theisen, M.</b> (2023). Metaethical intuitions in lay concepts of normative uncertainty. <i>Philosophical Psychology</i>. Advance online publication. <a href="https://doi.org/10.1080/09515089.2023.2174422" rel="nofollow">https://doi.org/10.1080/09515089.2023.2174422</a> (Accepted Manuscript available for download)</p>
             <p>Mertens, A., <b>Theisen, M.</b>, &amp; Funke, J. (2021). Measuring Achievement, Affiliation, and Power Motives in Mobility Situations: Development of the Multi-Motive Grid Mobility. <i>Frontiers in Psychology</i>, <i>12</i>, 765627. <a href="https://doi.org/10.3389/fpsyg.2021.765627" rel="nofollow">https://doi.org/10.3389/fpsyg.2021.765627</a> (Open Access)</p>
             <p><b>Theisen, M.</b>, Lerche, V., Krause, M. von, &amp; Voss, A. (2021). Age differences in diffusion model parameters: A meta-analysis. <i>Psychological Research</i>, <i>85</i>(5), 2012–2021. <a href="https://doi.org/10.1007/s00426-020-01371-8" rel="nofollow">https://doi.org/10.1007/s00426-020-01371-8</a> (Open Access)</p>
         </div>
+
         <h3>Invited Talks</h3>
         <p><b>Theisen, M. </b>&amp; Andow, J. (2024). <i>The exculpatory potential of moral ignorance: Evidence from a blame-updating paradigm</i>. Talk at INCET, Jagiellonian University, Kraków, Poland.</p>
         <p><b>Theisen, M. </b>(2022). <i>Towards a psychological understanding of normative uncertainty</i>. Talk at the UK Experimental Philosophy Workshop, University of East Anglia, Norwich, UK.</p>
+
         <h3>Conference Contributions</h3>
         <p><b>Theisen, M.</b> &amp; Andow, J. (2024). <i>The exculpatory potential of moral ignorance: Evidence from a blame-updating paradigm</i>. Talk at the 4th European Experimental Philosophy Conference, Kraków, Poland.</p>
         <p><b>Theisen, M.</b> &amp; Germar, M. (2023). <i>Testing the empirical-normative distinction in moral uncertainty.</i> Talk at the 3rd European Experimental Philosophy Conference, Zurich, Switzerland.</p>
