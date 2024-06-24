@@ -4,28 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psychology of Forecasting - Maximilian Theisen</title>
-    <style>
+<style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
+            width: 70%;
+            padding: 20px;
+        }
+        .portrait {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
         }
         .content {
-            text-align: center;
+            text-align: left;
+            margin-top: 20px;
+        }
+        .menu {
+            width: 30%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu ul li {
+            margin: 10px 0;
+        }
+        .menu ul li ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .menu ul li a:hover {
+            color: #007BFF;
         }
     </style>
 </head>
 <body>
-    <div class="content">
+    <div class="menu">
+        <ul>
+		    <li><a href="index.html">About Me</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li>
+                <a href="teaching.html">Teaching</a>
+                <ul>
+                    <li><a href="forecasting.html">Psychology of Forecasting</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="content" style="margin-left: 20%">
         <h1>Psychology of Forecasting</h1>
         <p>I predict that this page will be available soon.</p>
-        <a href="teaching.html">Back to Teaching</a>
-        <br>
-        <a href="index.html">Back to Home</a>
     </div>
 </body>
 </html>
