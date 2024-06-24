@@ -4,74 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maximilian Theisen</title>
-    <style>
+<style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f8f9fa; /* Light gray background */
+        }
+        .header {
+            background-color: #007BFF; /* Blue header background */
+            color: #fff; /* White text color */
+            padding: 10px 20px; /* Padding inside header */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow below header */
             display: flex;
+            justify-content: space-between; /* Align items with space in between */
+            align-items: center; /* Center vertically */
         }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 70%;
-            padding: 20px;
-        }
-        .portrait {
-            border-radius: 0%;
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-        }
-        .content {
-            text-align: left;
-            margin-top: 20px;
+        .header h1 {
+            margin: 0; /* Remove default margin */
+            font-size: 24px; /* Larger font size */
         }
         .menu {
-            width: 30%;
-            background-color: #f4f4f4;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .menu ul {
-            list-style-type: none;
+            list-style-type: none; /* Remove default list style */
+            margin: 0;
             padding: 0;
+            display: flex;
         }
-        .menu ul li {
-            margin: 10px 0;
+        .menu li {
+            margin-right: 20px; /* Space between menu items */
         }
-        .menu ul li ul {
-            margin-top: 5px;
-            padding-left: 20px;
-        }
-        .menu ul li a {
+        .menu li a {
             text-decoration: none;
-            color: #333;
+            color: #fff; /* White text color */
+            font-size: 18px; /* Menu font size */
         }
-        .menu ul li a:hover {
+        .menu li a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Light shadow around content */
+        }
+        .content h2 {
+            color: #007BFF; /* Blue heading color */
+        }
+        .content h3 {
+            color: #007BFF; /* Blue heading color */
+        }
+        .content p {
+            margin-bottom: 10px;
+        }
+        .content a {
             color: #007BFF;
+            text-decoration: none;
         }
+        .content a:hover {
+            text-decoration: underline;
+        }
+		    .content ul {
+        list-style: none; /* Remove default bullets */
+        padding-left: 20px; /* Indentation for list items */
+    }
+    .content ul li {
+        position: relative;
+        padding-left: 30px; /* Space before list item content */
+        margin-bottom: 5px; /* Space between list items */
+		margin-top: 5px; 
+    }
+    .content ul li:before {
+        content: "-"; /* Bullet character (•) */
+        color: #007BFF; /* Bullet color */
+        font-size: 16px; /* Bullet size */
+        position: absolute;
+        left: 0;
+        top: 0em; /* Adjust vertical position */
+    }
     </style>
 </head>
 <body>
-    <div class="menu">
-        <ul>
-		    <li><a href="index.html">About Me</a></li>
+<div class="header">
+<h1>Maximilian Theisen</h1>
+    <ul class="menu">
+		    <li><a href="index.html">Home</a></li>
             <li><a href="research.html">Research</a></li>
             <li>
                 <a href="teaching.html">Teaching</a>
-                <ul>
-                    <li><a href="forecasting.html">Psychology of Forecasting</a></li>
-                </ul>
             </li>
-        </ul>
-    </div>
-    <div class="container">
-        <img src="portrait.jpg" alt="Portrait of Me" class="portrait">
-        <div class="content" style="margin-left: 20%; margin-right: 20%">
-            <h1>About Me</h1>
-            <p>I am Maximilian Theisen, a psychologist and experimental philosopher from Germany. I am interested in how philosophical concepts translate to psychological hypotheses. My current research interests include:</p>
+    </ul>
+	</div>
+        <div class="content">
+		<center><img src="portrait.jpg" alt="Smiling young man with dark, short hair and a small beard, dressed in a blue-white striped shirt and a grey wool jumper, posing in front of a blurred glass architecture background." class="portrait" width="250" height="250" style="margin:5%"></center>
+            <p>Hi. I am Maximilian Theisen, a psychologist and experimental philosopher from Germany. I am interested in how philosophical concepts translate to psychological hypotheses. My current research interests include:</p>
                 <ul>
                     <li>Moral Uncertainty, Moral Ignorance, Moral Advice</li>
                     <li>Responsibility</li>
@@ -80,6 +106,5 @@
                 </ul>
 				<div>Find me on other platforms:</div><ul><li><a href="https://www.researchgate.net/profile/Maximilian_Theisen" title="ResearchGate" rel="nofollow">ResearchGate</a></li><li><a href="https://scholar.google.de/citations?user=bIS3Dl4AAAAJ" title="Google Scholar" rel="nofollow">Google Scholar</a></li><li><a href="https://osf.io/rt6xu/" title="OSF" rel="nofollow">OSF</a><br></li><li><a href="https://orcid.org/0000-0003-1596-805X" title="ORCID" rel="nofollow">ORCID</a></li></ul>
         </div>
-    </div>
 </body>
 </html>
